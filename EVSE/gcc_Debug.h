@@ -583,6 +583,9 @@
 #ifndef __GXX_ABI_VERSION
 #define __GXX_ABI_VERSION 1011
 #endif
+#ifndef STM32F103xE
+#define STM32F103xE 1
+#endif
 #ifndef __UTA_FBIT__
 #define __UTA_FBIT__ 64
 #endif
@@ -756,6 +759,9 @@
 #endif
 #ifndef __UDQ_FBIT__
 #define __UDQ_FBIT__ 64
+#endif
+#ifndef DEBUG
+#define DEBUG 1
 #endif
 #ifndef __INT8_TYPE__
 #define __INT8_TYPE__ signed char
@@ -1354,13 +1360,14 @@
 #ifndef __ATOMIC_RELEASE
 #define __ATOMIC_RELEASE 3
 #endif
-#ifndef DEBUG
-#define DEBUG 1
-#endif
 #endif
 
 // --- Include directories begin --- //
 //.
+//$(BSP_ROOT)/STM32F1xxxx/STM32F1xx_HAL_Driver/Inc
+//$(BSP_ROOT)/STM32F1xxxx/STM32F1xx_HAL_Driver/Inc/Legacy
+//$(BSP_ROOT)/STM32F1xxxx/CMSIS_HAL/Device/ST/STM32F1xx/Include
+//$(BSP_ROOT)/STM32F1xxxx/CMSIS_HAL/Include
 //$(TOOLCHAIN_ROOT)\arm-eabi\include\c++\7.2.0
 //$(TOOLCHAIN_ROOT)\arm-eabi\include\c++\7.2.0\arm-eabi\thumb\cortex_m3
 //$(TOOLCHAIN_ROOT)\arm-eabi\include\c++\7.2.0\backward
