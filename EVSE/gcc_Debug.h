@@ -1375,6 +1375,7 @@
 //$(TOOLCHAIN_ROOT)\lib\gcc\arm-eabi\7.2.0\include-fixed
 //$(TOOLCHAIN_ROOT)\arm-eabi\sys-include
 //$(TOOLCHAIN_ROOT)\arm-eabi\include
+//../../Inc
 // --- Include directories end --- //
 
 
